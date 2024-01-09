@@ -173,6 +173,7 @@ if (LLAMA_METAL)
 
     # copy ggml-metal.metal to bin directory
     configure_file(ggml-metal.metal ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/ggml-metal.metal COPYONLY)
+    configure_file(iq2-data.h ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/iq2-data.h COPYONLY)
 
     if (LLAMA_METAL_SHADER_DEBUG)
         # custom command to do the following:
